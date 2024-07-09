@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 1653626983986421294}
   - component: {fileID: 2785698736013404413}
   m_Layer: 0
-  m_Name: Bala
+  m_Name: Bala oponent
   m_TagString: Bala
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

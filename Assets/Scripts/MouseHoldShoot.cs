@@ -8,6 +8,8 @@ public class MouseHoldShoot : MonoBehaviour
     public Transform firePoint; // Punto desde donde se disparará el objeto
     public float maxChargeTime = 2f; // Tiempo máximo para cargar el disparo
     public float maxShootForce = 20f; // Fuerza máxima del disparo
+    public float gravity = -9.81f; // Valor de la gravedad
+    public Rigidbody2D rb2d;
 
     private float chargeTime; // Tiempo de carga actual
 
@@ -34,21 +36,40 @@ public class MouseHoldShoot : MonoBehaviour
         }
     }
 
-    void Shoot(float force)
+    void Shoot(float shootForce)
     {
-        if (projectilePrefab != null && firePoint != null)
+        // Crear el proyectil en el punto de disparo
+        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+
+        // Obtener el componente Rigidbody2D del proyectil
+        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+
+        // Verificar que se haya encontrado el Rigidbody2D
+        if (rb != null)
         {
-            // Crear una instancia del proyectil en el punto de disparo
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            // Aplicar una fuerza al proyectil
+            rb.AddForce(firePoint.up * shootForce, ForceMode2D.Impulse);
 
-            // Obtener el componente Rigidbody2D del proyectil
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-
-            if (rb != null)
-            {
-                // Aplicar una fuerza al proyectil en la dirección del firePoint
-                rb.AddForce(firePoint.right * force, ForceMode2D.Impulse);
-            }
+            // Añadir la gravedad personalizada al proyectil
+            ProjectileGravity2D pg = projectile.AddComponent<ProjectileGravity2D>();
+            pg.gravity = gravity;
+            pg.rb2d = rb;
         }
+        else
+        {
+            Debug.LogError("No se encontró Rigidbody2D en el proyectil.");
+        }
+    }
+}
+
+public class ProjectileGravity2D : MonoBehaviour
+{
+    public float gravity = -9.81f;
+    public Rigidbody2D rb2d;
+
+    void FixedUpdate()
+    {
+        // Aplicar una fuerza hacia abajo (como si fuera gravedad)
+        rb2d.AddForce(Vector2.up * gravity, ForceMode2D.Force);
     }
 }
