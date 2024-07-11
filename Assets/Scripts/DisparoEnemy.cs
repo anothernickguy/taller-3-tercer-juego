@@ -10,7 +10,7 @@ public class DisparoEnemy : MonoBehaviour
     public float fuerzaDeDisparo = 10f; // La fuerza con la que se disparará el objeto
     public TextMeshProUGUI textoContador; // El TextMeshPro que se actualizará
 
-    private int contador = 1;
+    private int contador = 0;
 
     void Update()
     {
@@ -39,7 +39,7 @@ public class DisparoEnemy : MonoBehaviour
         // Aplica una fuerza al objeto para dispararlo hacia la izquierda
         if (rb != null)
         {
-            rb.AddForce(-puntoDeDisparo.right * fuerzaDeDisparo, ForceMode.Impulse);
+            rb.AddForce(Vector3.left * fuerzaDeDisparo, ForceMode.Impulse);
         }
     }
 }

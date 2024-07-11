@@ -4927,7 +4927,6 @@ GameObject:
   - component: {fileID: 8935935874252718501}
   - component: {fileID: 5019051150082972338}
   - component: {fileID: 2615722062299761054}
-  - component: {fileID: 8203541005509548613}
   m_Layer: 0
   m_Name: Bala oponent
   m_TagString: Bala
@@ -5033,19 +5032,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &8203541005509548613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3932615516130910786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652a501ca85f160478f3ad069058f7de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuerza: 10
 --- !u!1 &4469861115417345555
 GameObject:
   m_ObjectHideFlags: 0

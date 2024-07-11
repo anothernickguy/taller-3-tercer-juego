@@ -538,9 +538,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1106,6 +1106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &215784318
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1530,9 +1531,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 1
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 200
+  m_WholeNumbers: 1
+  m_Value: 200
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1611,6 +1612,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 324642258}
 --- !u!114 &325242743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1905,6 +1907,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &472155841
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2243,6 +2246,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &620091735
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3595,7 +3599,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 1a7a863594e69e041b6e66ee633fca26, type: 2}
     - target: {fileID: 3428764374157245943, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.867
+      value: 0.542
       objectReference: {fileID: 0}
     - target: {fileID: 3660247399952701990, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3615,7 +3619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3670144302216678043, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.67
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3670144302216678043, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4791,6 +4795,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &1480075373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5216,6 +5221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &1550792835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6100,6 +6106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destruirAlMorir: 1
+  hpSlider: {fileID: 0}
 --- !u!58 &1871799813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7167,6 +7174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: hpSlider
+      value: 
+      objectReference: {fileID: 62736110}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
