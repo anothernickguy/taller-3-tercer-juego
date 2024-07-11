@@ -9,7 +9,7 @@ public class MouseHoldShoot : MonoBehaviour
     public float maxChargeTime = 2f; // Tiempo máximo para cargar el disparo
     public float maxShootForce = 20f; // Fuerza máxima del disparo
     public float gravity = -9.81f; // Valor de la gravedad
-    public Rigidbody2D rb2d;
+    //public Rigidbody2D rb2d;
 
     private float chargeTime; // Tiempo de carga actual
 
@@ -51,9 +51,9 @@ public class MouseHoldShoot : MonoBehaviour
             rb.AddForce(firePoint.up * shootForce, ForceMode2D.Impulse);
 
             // Añadir la gravedad personalizada al proyectil
-            ProjectileGravity2D pg = projectile.AddComponent<ProjectileGravity2D>();
-            pg.gravity = gravity;
-            pg.rb2d = rb;
+           // ProjectileGravity2D pg = projectile.AddComponent<ProjectileGravity2D>();
+            //pg.gravity = gravity;
+            //pg.rb2d = rb;
         }
         else
         {

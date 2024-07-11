@@ -47,13 +47,13 @@ public class Proyectil : MonoBehaviour
             if (impactPrefab)
                 Instantiate(impactPrefab, hit.point, Quaternion.identity);
 
-            sonidosGO.ReproducirSonido();
+            //sonidosGO.ReproducirSonido();
             Destroy(gameObject);
         }
     }
 
     private void FixedUpdate()
     {
-        rb2d.velocity = transform.right * velocidadBala;
+        //rb2d.velocity = transform.right * velocidadBala;
     }
 }
