@@ -1107,6 +1107,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &215784318
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1613,6 +1616,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 324642258}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &325242743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,6 +1635,21 @@ MonoBehaviour:
   puntoDeDisparo: {fileID: 1114544367}
   fuerzaDeDisparo: 10
   textoContador: {fileID: 756250954}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 777321908}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: move
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &427137326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,6 +1929,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &472155841
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2247,6 +2271,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &620091735
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3619,7 +3646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3670144302216678043, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: 8.48
       objectReference: {fileID: 0}
     - target: {fileID: 3670144302216678043, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4796,6 +4823,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1480075373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5222,6 +5252,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1550792835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6107,6 +6140,9 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1871799813
 CircleCollider2D:
   m_ObjectHideFlags: 0

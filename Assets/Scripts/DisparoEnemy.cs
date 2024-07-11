@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
+
 
 public class DisparoEnemy : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class DisparoEnemy : MonoBehaviour
     public Transform puntoDeDisparo; // El punto desde donde se disparará el objeto
     public float fuerzaDeDisparo = 10f; // La fuerza con la que se disparará el objeto
     public TextMeshProUGUI textoContador; // El TextMeshPro que se actualizará
+    public UnityEvent OnEnter;
 
     private int contador = 0;
 
@@ -35,6 +38,8 @@ public class DisparoEnemy : MonoBehaviour
 
         // Obtiene el componente Rigidbody del objeto disparado para aplicar la fuerza
         Rigidbody rb = objetoDisparado.GetComponent<Rigidbody>();
+
+        OnEnter.Invoke();
 
         // Aplica una fuerza al objeto para dispararlo hacia la izquierda
         if (rb != null)
