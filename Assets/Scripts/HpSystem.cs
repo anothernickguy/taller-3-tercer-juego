@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using UnityEngine.Events;
+
 
 public class HpSystem : MonoBehaviour, Damagable
 {
@@ -11,7 +11,7 @@ public class HpSystem : MonoBehaviour, Damagable
     public UnityEvent onHit, onMuere;
     public bool destruirAlMorir;
     public Slider hpSlider; // Referencia al Slider que mostrará el HP
-    public UnityEvent OnEnter;
+    
 
     void Start()
     {
