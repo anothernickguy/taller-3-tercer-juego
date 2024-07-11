@@ -4,16 +4,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
 
-
 public class DisparoEnemy : MonoBehaviour
 {
     public GameObject objetoADisparar; // El objeto que se disparará
     public Transform puntoDeDisparo; // El punto desde donde se disparará el objeto
     public float fuerzaDeDisparo = 10f; // La fuerza con la que se disparará el objeto
     public TextMeshProUGUI textoContador; // El TextMeshPro que se actualizará
-    public UnityEvent OnEnter;
+    public UnityEvent OnEnter;
 
-    private int contador = 0;
+    private int contador = 1;
 
     void Update()
     {
@@ -41,9 +40,10 @@ public class DisparoEnemy : MonoBehaviour
 
         OnEnter.Invoke();
 
-        // Aplica una fuerza al objeto para dispararlo hacia la izquierda
+        // Aplica una fuerza al objeto para dispararlo hacia la izquierda globalmente en el eje x
         if (rb != null)
         {
+            // Vector3.left es (–1, 0, 0) en el espacio local, para el eje global x usamos (-1, 0, 0)
             rb.AddForce(Vector3.left * fuerzaDeDisparo, ForceMode.Impulse);
         }
     }
