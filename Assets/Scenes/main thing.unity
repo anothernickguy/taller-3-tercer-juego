@@ -992,18 +992,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 777321908}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: move
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &457411948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,15 +1981,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3660247399952701990, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99999833
+      value: 0.9899451
       objectReference: {fileID: 0}
     - target: {fileID: 3660247399952701990, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0018269923
+      value: -0.14145264
       objectReference: {fileID: 0}
     - target: {fileID: 3660247399952701990, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.209
+      value: -16.264
       objectReference: {fileID: 0}
     - target: {fileID: 3670144302216678043, guid: 42dfe4b597bc6214db33e806d57604b3, type: 3}
       propertyPath: m_LocalScale.x

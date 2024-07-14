@@ -8,7 +8,7 @@ public class DisparoEnemy : MonoBehaviour
 {
     public GameObject objetoADisparar; // El objeto que se disparará
     public Transform puntoDeDisparo; // El punto desde donde se disparará el objeto
-    public float fuerzaDeDisparo = 10f; // La fuerza con la que se disparará el objeto
+    public float fuerzaDeDisparo = 10f; // La fuerza con la que se disparará el objeto (positivo para fuerza hacia la izquierda)
     public TextMeshProUGUI textoContador; // El TextMeshPro que se actualizará
     public UnityEvent OnEnter;
 
@@ -43,8 +43,16 @@ public class DisparoEnemy : MonoBehaviour
         // Aplica una fuerza al objeto para dispararlo hacia la izquierda globalmente en el eje x
         if (rb != null)
         {
-            // Vector3.left es (–1, 0, 0) en el espacio local, para el eje global x usamos (-1, 0, 0)
-            rb.AddForce(Vector3.left * fuerzaDeDisparo, ForceMode.Impulse);
+            Vector3 fuerza = Vector3.left * fuerzaDeDisparo;
+            rb.AddForce(fuerza, ForceMode.Impulse);
+
+            // Debug logs para ver lo que está pasando
+            Debug.Log("Fuerza aplicada: " + fuerza);
+            Debug.Log("Posición inicial del objeto disparado: " + objetoDisparado.transform.position);
+        }
+        else
+        {
+            Debug.LogError("El objeto disparado no tiene un componente Rigidbody.");
         }
     }
 }

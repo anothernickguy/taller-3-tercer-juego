@@ -4925,8 +4925,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5528506587957383203}
   - component: {fileID: 8935935874252718501}
-  - component: {fileID: 5019051150082972338}
-  - component: {fileID: 2615722062299761054}
+  - component: {fileID: 3826429107989817140}
+  - component: {fileID: 7868085403514671794}
   m_Layer: 0
   m_Name: Bala oponent
   m_TagString: Bala
@@ -4989,23 +4989,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.12, y: 0}
   m_Size: {x: 0.16, y: 0.08}
   m_Direction: 1
---- !u!114 &5019051150082972338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3932615516130910786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8527f85d35ed2584a8bc6f3b10b24c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  impactPrefab: {fileID: 371696919283298759, guid: 29ea1bf29f8896d41bbc29f5b4c2a104, type: 3}
-  velocidadBala: 25
-  rb2d: {fileID: 2615722062299761054}
---- !u!50 &2615722062299761054
+--- !u!50 &3826429107989817140
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -5017,9 +5001,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.015
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -5030,8 +5014,24 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7868085403514671794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3932615516130910786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b33656fe70e344191ee7f9f25aa340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  impactPrefab: {fileID: 0}
+  velocidadBala: 25
+  rb2d: {fileID: 3826429107989817140}
 --- !u!1 &4469861115417345555
 GameObject:
   m_ObjectHideFlags: 0
