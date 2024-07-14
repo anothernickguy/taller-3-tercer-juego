@@ -8,7 +8,7 @@ public class Disparo : MonoBehaviour
     public Transform spawnPoint;
     public Transform direccionTransform;
     public GameObject balaPrefab;
-    public UnityEvent OnEnter
+    public UnityEvent OnEnter;
 
     public float fuerzaMaxima;
     float tiempoDeCarga;
