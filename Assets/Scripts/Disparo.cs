@@ -9,6 +9,7 @@ public class Disparo : MonoBehaviour
     public Transform direccionTransform;
     public GameObject balaPrefab;
     public UnityEvent OnEnter;
+    public UnityEvent OnEnter2;
 
     public float fuerzaMaxima;
     float tiempoDeCarga;
@@ -22,6 +23,7 @@ public class Disparo : MonoBehaviour
             // cargando disparo
             tiempoDeCarga+= Time.deltaTime;
             tiempoDeCarga = Mathf.Clamp(tiempoDeCarga, 0, tiempoMaximoCarga);
+            OnEnter2.Invoke();
         }
 
         if(Input.GetMouseButtonUp(0))
