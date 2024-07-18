@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0061d50a836caad4cafb3bc51464f596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 200
+  hp: 300
   onHit:
     m_PersistentCalls:
       m_Calls:
@@ -1227,7 +1227,19 @@ MonoBehaviour:
         m_CallState: 2
   onMuere:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 325242744}
+        m_TargetAssemblyTypeName: ActivadorDeObjeto, Assembly-CSharp
+        m_MethodName: ActivarObjeto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   destruirAlMorir: 1
   hpSlider: {fileID: 1823308373}
   dead: {fileID: 0}
@@ -1274,7 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c86450322f80464985a9699776a179a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoParaActivar: {fileID: 0}
+  objetoParaActivar: {fileID: 580680950}
 --- !u!1 &457411948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3194,7 @@ Transform:
   m_GameObject: {fileID: 1600338447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.04, y: -1.36, z: -10}
+  m_LocalPosition: {x: 1.04, y: -0.96, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
