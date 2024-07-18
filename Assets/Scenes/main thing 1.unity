@@ -3910,23 +3910,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1584920905}
+      objectReference: {fileID: 3853977404326167535}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivarObjeto
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ActivadorDeObjeto, Assembly-CSharp
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: ded
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

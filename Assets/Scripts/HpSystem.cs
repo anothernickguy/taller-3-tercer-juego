@@ -35,10 +35,16 @@ public class HpSystem : MonoBehaviour, Damagable
 
     void Muere()
     {
-        dead.SetActive(true);
+        Activa();
+
         onMuere.Invoke();
         if (destruirAlMorir) Destroy(gameObject);
         
+    }
+
+    void Activa()
+    {
+        dead.SetActive(true);
     }
 
     void UpdateSliderValue()
