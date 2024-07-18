@@ -4198,6 +4198,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993052325}
   m_CullTransparentMesh: 1
+--- !u!1 &2006577578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2060753274734687072, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+  m_PrefabInstance: {fileID: 3853977404326167534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2006577585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006577578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c86450322f80464985a9699776a179a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoParaActivar: {fileID: 224214337}
 --- !u!1 &2127861183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4628,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: hp
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
       propertyPath: dead
       value: 
       objectReference: {fileID: 224214337}
@@ -4617,10 +4639,45 @@ PrefabInstance:
       propertyPath: hpSlider
       value: 
       objectReference: {fileID: 1952807840}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: destruirAlMorir
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2006577585}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivarObjeto
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActivadorDeObjeto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226006684478277691, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      propertyPath: onMuere.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2060753274734687072, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2006577585}
   m_SourcePrefab: {fileID: 100100000, guid: 166d7175d75b4b342bfc5222c1afb704, type: 3}
 --- !u!95 &3853977404326167535 stripped
 Animator:
