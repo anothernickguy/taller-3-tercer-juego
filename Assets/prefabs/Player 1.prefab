@@ -242,7 +242,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.041269176, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -600,6 +600,9 @@ MonoBehaviour:
   direccionTransform: {fileID: 2844161230069319872}
   balaPrefab: {fileID: 3417707909148905695, guid: 0dd1143b01b6cc846b060188b8d644ad, type: 3}
   OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnter2:
     m_PersistentCalls:
       m_Calls: []
   fuerzaMaxima: 60
@@ -1137,7 +1140,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9548634, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1623,7 +1626,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.014684939, g: 0.6226415, b: 0.053017344, a: 1}
+  m_Color: {r: 1, g: 0.54467595, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

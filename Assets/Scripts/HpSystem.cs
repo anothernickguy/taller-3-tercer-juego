@@ -11,6 +11,7 @@ public class HpSystem : MonoBehaviour, Damagable
     public UnityEvent onHit, onMuere;
     public bool destruirAlMorir;
     public Image hpSlider; // Referencia al Slider que mostrará el HP
+    public GameObject dead;
     
 
     void Start()
@@ -36,6 +37,7 @@ public class HpSystem : MonoBehaviour, Damagable
     {
         onMuere.Invoke();
         if (destruirAlMorir) Destroy(gameObject);
+        dead.SetActive(true);
     }
 
     void UpdateSliderValue()
