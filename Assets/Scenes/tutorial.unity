@@ -1015,6 +1015,7 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  dead: {fileID: 0}
 --- !u!1 &333389913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799894957682091697, guid: 5295f5a0234ec4546bfd2624055072b3, type: 3}
@@ -1320,6 +1321,7 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  dead: {fileID: 0}
 --- !u!58 &620091735
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3354,6 +3356,7 @@ GameObject:
   - component: {fileID: 1600338449}
   - component: {fileID: 1600338448}
   - component: {fileID: 1600338451}
+  - component: {fileID: 1600338452}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3448,6 +3451,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausemenu: {fileID: 333389913}
+--- !u!114 &1600338452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600338447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24795897e22aa944a88172b6ed586f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1613186863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,6 +4064,7 @@ MonoBehaviour:
         m_CallState: 2
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
+  dead: {fileID: 0}
 --- !u!58 &1871799813
 CircleCollider2D:
   m_ObjectHideFlags: 0
