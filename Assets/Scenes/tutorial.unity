@@ -914,6 +914,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143798394}
   m_CullTransparentMesh: 1
+--- !u!1 &179644181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179644182}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179644182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179644181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7915573, y: 2.9773753, z: -9.957256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &284629840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1352,7 @@ MonoBehaviour:
       m_Calls: []
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
-  dead: {fileID: 0}
+  dead: {fileID: 179644181}
 --- !u!58 &620091735
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4064,7 +4095,7 @@ MonoBehaviour:
         m_CallState: 2
   destruirAlMorir: 1
   hpSlider: {fileID: 0}
-  dead: {fileID: 0}
+  dead: {fileID: 179644181}
 --- !u!58 &1871799813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4882,3 +4913,4 @@ SceneRoots:
   - {fileID: 121651513}
   - {fileID: 1536833339}
   - {fileID: 2027936946}
+  - {fileID: 179644182}
